@@ -1,0 +1,8 @@
+warehouseCode,warehouseName,productLine,total_product,total_stock
+a,North,Motorcycles,13,69401
+a,North,Planes,12,62287
+b,East,"Classic Cars",38,219183
+c,West,"Vintage Cars",24,124880
+d,South,"Trucks and Buses",11,35851
+d,South,Ships,9,26833
+d,South,Trains,3,16696

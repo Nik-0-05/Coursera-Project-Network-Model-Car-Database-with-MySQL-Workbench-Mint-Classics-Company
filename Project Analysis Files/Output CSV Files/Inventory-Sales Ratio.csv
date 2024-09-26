@@ -1,0 +1,5 @@
+warehouseCode,warehouseName,unique_products,total_inventory,total_sales,inventory_sales_ratio
+b,East,38,5851766,35582,164.4586
+a,North,25,3659553,24650,148.4606
+c,West,24,3439570,22933,149.9834
+d,South,23,2186871,22351,97.8422

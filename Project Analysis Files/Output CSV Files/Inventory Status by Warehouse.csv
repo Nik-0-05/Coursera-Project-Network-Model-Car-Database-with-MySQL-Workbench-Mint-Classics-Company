@@ -1,0 +1,5 @@
+warehouseCode,warehouseName,overstocked_count,understocked_count,well_stocked_count,total_products
+a,North,19,5,1,25
+b,East,30,4,4,38
+c,West,19,3,2,24
+d,South,11,4,8,23

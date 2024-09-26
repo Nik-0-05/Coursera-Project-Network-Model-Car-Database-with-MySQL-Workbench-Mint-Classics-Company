@@ -1,0 +1,111 @@
+productName,warehouseCode,warehouseName,quantityInStock
+"1952 Alpine Renault 1300",b,East,7305
+"1972 Alfa Romeo GTA",b,East,3252
+"1962 LanciaA Delta 16V",b,East,6791
+"1968 Ford Mustang",b,East,68
+"2001 Ferrari Enzo",b,East,3619
+"1969 Corvair Monza",b,East,6906
+"1968 Dodge Charger",b,East,9123
+"1969 Ford Falcon",b,East,1049
+"1970 Plymouth Hemi Cuda",b,East,5663
+"1969 Dodge Charger",b,East,7323
+"1993 Mazda RX-7",b,East,3975
+"1965 Aston Martin DB5",b,East,9042
+"1948 Porsche 356-A Roadster",b,East,8826
+"1995 Honda Civic",b,East,9772
+"1998 Chrysler Plymouth Prowler",b,East,4724
+"1999 Indy 500 Monte Carlo SS",b,East,8164
+"1992 Ferrari 360 Spider red",b,East,8347
+"1985 Toyota Supra",b,East,7733
+"1969 Dodge Super Bee",b,East,1917
+"1976 Ford Gran Torino",b,East,9127
+"1948 Porsche Type 356 Roadster",b,East,8990
+"1970 Triumph Spitfire",b,East,5545
+"1957 Corvette Convertible",b,East,1249
+"1957 Ford Thunderbird",b,East,3209
+"1970 Chevy Chevelle SS 454",b,East,1005
+"1970 Dodge Coronet",b,East,4074
+"1966 Shelby Cobra 427 S/C",b,East,8197
+"1949 Jaguar XK 120",b,East,2350
+"1958 Chevy Corvette Limited Edition",b,East,2542
+"1952 Citroen-15CV",b,East,1452
+"1982 Lamborghini Diablo",b,East,7723
+"1969 Chevrolet Camaro Z28",b,East,4695
+"1971 Alpine Renault 1600s",b,East,7995
+"2002 Chevy Corvette",b,East,9446
+"1956 Porsche 356A Coupe",b,East,6600
+"1992 Porsche Cayenne Turbo Silver",b,East,6582
+"1961 Chevrolet Impala",b,East,7869
+"1982 Camaro Z28",b,East,6934
+"1969 Harley Davidson Ultimate Chopper",a,North,7933
+"1996 Moto Guzzi 1100i",a,North,6625
+"2003 Harley-Davidson Eagle Drag Bike",a,North,5582
+"2002 Suzuki XREO",a,North,9997
+"1980s Black Hawk Helicopter",a,North,5330
+"P-51-D Mustang",a,North,992
+"1936 Harley Davidson El Knucklehead",a,North,4357
+"1957 Vespa GS150",a,North,7689
+"1997 BMW R 1100 S",a,North,7003
+"1928 British Royal Navy Airplane",a,North,3627
+"1960 BSA Gold Star DBD34",a,North,15
+"1982 Ducati 900 Monster",a,North,6840
+"1900s Vintage Bi-Plane",a,North,5942
+"Corsair F4U ( Bird Cage)",a,North,6812
+"1900s Vintage Tri-Plane",a,North,2756
+"1997 BMW F650 ST",a,North,178
+"1982 Ducati 996 R",a,North,9241
+"1974 Ducati 350 Mk3 Desmo",a,North,3341
+"2002 Yamaha YZR M1",a,North,600
+"American Airlines: B767-300",a,North,5841
+"America West Airlines B757-200",a,North,9653
+"ATA: B757-300",a,North,7106
+"F/A 18 Hornet 1/72",a,North,551
+"American Airlines: MD-11S",a,North,8820
+"Boeing X-32A JSF",a,North,4857
+"1958 Setra Bus",d,South,1579
+"1957 Chevy Pickup",d,South,6125
+"1940 Ford Pickup Truck",d,South,2613
+"1964 Mercedes Tour Bus",d,South,8258
+"1926 Ford Fire Engine",d,South,2018
+"1999 Yamaha Speed Boat",d,South,4259
+"Collectable Wooden Train",d,South,6450
+"1940s Ford truck",d,South,3128
+"18th century schooner",d,South,1898
+"1962 Volkswagen Microbus",d,South,2327
+"1980’s GM Manhattan Express",d,South,5099
+"1954 Greyhound Scenicruiser",d,South,2874
+"1950's Chicago Surface Lines Streetcar",d,South,8601
+"1996 Peterbilt 379 Stake Bed with Outrigger",d,South,814
+"Diamond T620 Semi-Skirted Tanker",d,South,1016
+"1962 City of Detroit Streetcar",d,South,1645
+"The Schooner Bluenose",d,South,1897
+"The Mayflower",d,South,737
+"HMS Bounty",d,South,3501
+"The USS Constitution Ship",d,South,7083
+"The Titanic",d,South,1956
+"The Queen Mary",d,South,5088
+"Pont Yacht",d,South,414
+"1937 Lincoln Berline",c,West,8693
+"1936 Mercedes-Benz 500K Special Roadster",c,West,8635
+"1917 Grand Touring Sedan",c,West,2724
+"1911 Ford Town Car",c,West,540
+"1932 Model A Ford J-Coupe",c,West,9354
+"1928 Mercedes-Benz SSK",c,West,548
+"1913 Ford Model T Speedster",c,West,4189
+"1934 Ford V8 Coupe",c,West,5649
+"18th Century Vintage Horse Carriage",c,West,5992
+"1903 Ford Model A",c,West,3913
+"1917 Maxwell Touring Car",c,West,7913
+"1941 Chevrolet Special Deluxe Cabriolet",c,West,2378
+"1932 Alfa Romeo 8C2300 Spider Sport",c,West,6553
+"1904 Buick Runabout",c,West,8290
+"1939 Cadillac Limousine",c,West,6645
+"1939 Chevrolet Deluxe Coupe",c,West,7332
+"1938 Cadillac V-16 Presidential Limousine",c,West,2847
+"1912 Ford Model T Delivery Wagon",c,West,9173
+"1937 Horch 930V Limousine",c,West,2902
+"1940 Ford Delivery Sedan",c,West,6621
+"1936 Mercedes Benz 500k Roadster",c,West,2081
+"1936 Chrysler Airflow",c,West,4710
+"1928 Ford Phaeton Deluxe",c,West,136
+"1930 Buick Marquette Phaeton",c,West,7062

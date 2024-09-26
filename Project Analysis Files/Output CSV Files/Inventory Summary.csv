@@ -1,0 +1,110 @@
+warehouseCode,warehouseName,productCode,productName,quantityInStock,total_ordered,remaining_stock,inventory_status
+a,North,S10_1678,"1969 Harley Davidson Ultimate Chopper",7933,991,6942,Overstocked
+a,North,S10_2016,"1996 Moto Guzzi 1100i",6625,954,5671,Overstocked
+a,North,S10_4698,"2003 Harley-Davidson Eagle Drag Bike",5582,929,4653,Overstocked
+a,North,S12_2823,"2002 Suzuki XREO",9997,1007,8990,Overstocked
+a,North,S18_1662,"1980s Black Hawk Helicopter",5330,948,4382,Overstocked
+a,North,S18_2581,"P-51-D Mustang",992,851,141,Understocked
+a,North,S18_2625,"1936 Harley Davidson El Knucklehead",4357,909,3448,Overstocked
+a,North,S18_3782,"1957 Vespa GS150",7689,959,6730,Overstocked
+a,North,S24_1578,"1997 BMW R 1100 S",7003,998,6005,Overstocked
+a,North,S24_1785,"1928 British Royal Navy Airplane",3627,853,2774,Overstocked
+a,North,S24_2000,"1960 BSA Gold Star DBD34",15,1015,-1000,Understocked
+a,North,S24_2360,"1982 Ducati 900 Monster",6840,947,5893,Overstocked
+a,North,S24_2841,"1900s Vintage Bi-Plane",5942,874,5068,Overstocked
+a,North,S24_3949,"Corsair F4U ( Bird Cage)",6812,939,5873,Overstocked
+a,North,S24_4278,"1900s Vintage Tri-Plane",2756,930,1826,Well-Stocked
+a,North,S32_1374,"1997 BMW F650 ST",178,920,-742,Understocked
+a,North,S32_2206,"1982 Ducati 996 R",9241,906,8335,Overstocked
+a,North,S32_4485,"1974 Ducati 350 Mk3 Desmo",3341,898,2443,Overstocked
+a,North,S50_4713,"2002 Yamaha YZR M1",600,992,-392,Understocked
+a,North,S700_1691,"American Airlines: B767-300",5841,820,5021,Overstocked
+a,North,S700_2466,"America West Airlines B757-200",9653,866,8787,Overstocked
+a,North,S700_2834,"ATA: B757-300",7106,927,6179,Overstocked
+a,North,S700_3167,"F/A 18 Hornet 1/72",551,904,-353,Understocked
+a,North,S700_4002,"American Airlines: MD-11S",8820,1010,7810,Overstocked
+a,North,S72_1253,"Boeing X-32A JSF",4857,857,4000,Overstocked
+b,East,S10_1949,"1952 Alpine Renault 1300",7305,911,6394,Overstocked
+b,East,S10_4757,"1972 Alfa Romeo GTA",3252,917,2335,Overstocked
+b,East,S10_4962,"1962 LanciaA Delta 16V",6791,868,5923,Overstocked
+b,East,S12_1099,"1968 Ford Mustang",68,909,-841,Understocked
+b,East,S12_1108,"2001 Ferrari Enzo",3619,973,2646,Overstocked
+b,East,S12_3148,"1969 Corvair Monza",6906,933,5973,Overstocked
+b,East,S12_3380,"1968 Dodge Charger",9123,903,8220,Overstocked
+b,East,S12_3891,"1969 Ford Falcon",1049,921,128,Understocked
+b,East,S12_3990,"1970 Plymouth Hemi Cuda",5663,875,4788,Overstocked
+b,East,S12_4675,"1969 Dodge Charger",7323,951,6372,Overstocked
+b,East,S18_1129,"1993 Mazda RX-7",3975,860,3115,Overstocked
+b,East,S18_1589,"1965 Aston Martin DB5",9042,831,8211,Overstocked
+b,East,S18_1889,"1948 Porsche 356-A Roadster",8826,949,7877,Overstocked
+b,East,S18_1984,"1995 Honda Civic",9772,836,8936,Overstocked
+b,East,S18_2238,"1998 Chrysler Plymouth Prowler",4724,958,3766,Overstocked
+b,East,S18_2870,"1999 Indy 500 Monte Carlo SS",8164,777,7387,Overstocked
+b,East,S18_3232,"1992 Ferrari 360 Spider red",8347,1720,6627,Overstocked
+b,East,S18_3278,"1969 Dodge Super Bee",1917,974,943,Well-Stocked
+b,East,S18_3482,"1976 Ford Gran Torino",9127,915,8212,Overstocked
+b,East,S18_3685,"1948 Porsche Type 356 Roadster",8990,852,8138,Overstocked
+b,East,S18_4027,"1970 Triumph Spitfire",5545,922,4623,Overstocked
+b,East,S18_4721,"1957 Corvette Convertible",1249,1013,236,Understocked
+b,East,S18_4933,"1957 Ford Thunderbird",3209,665,2544,Overstocked
+b,East,S24_1046,"1970 Chevy Chevelle SS 454",1005,717,288,Understocked
+b,East,S24_1444,"1970 Dodge Coronet",4074,921,3153,Overstocked
+b,East,S24_1628,"1966 Shelby Cobra 427 S/C",8197,814,7383,Overstocked
+b,East,S24_2766,"1949 Jaguar XK 120",2350,834,1516,Well-Stocked
+b,East,S24_2840,"1958 Chevy Corvette Limited Edition",2542,952,1590,Well-Stocked
+b,East,S24_2887,"1952 Citroen-15CV",1452,759,693,Well-Stocked
+b,East,S24_2972,"1982 Lamborghini Diablo",7723,872,6851,Overstocked
+b,East,S24_3191,"1969 Chevrolet Camaro Z28",4695,822,3873,Overstocked
+b,East,S24_3371,"1971 Alpine Renault 1600s",7995,945,7050,Overstocked
+b,East,S24_3432,"2002 Chevy Corvette",9446,825,8621,Overstocked
+b,East,S24_3856,"1956 Porsche 356A Coupe",6600,1013,5587,Overstocked
+b,East,S24_4048,"1992 Porsche Cayenne Turbo Silver",6582,844,5738,Overstocked
+b,East,S24_4620,"1961 Chevrolet Impala",7869,941,6928,Overstocked
+b,East,S700_2824,"1982 Camaro Z28",6934,951,5983,Overstocked
+c,West,S18_1342,"1937 Lincoln Berline",8693,1060,7633,Overstocked
+c,West,S18_1367,"1936 Mercedes-Benz 500K Special Roadster",8635,935,7700,Overstocked
+c,West,S18_1749,"1917 Grand Touring Sedan",2724,805,1919,Overstocked
+c,West,S18_2248,"1911 Ford Town Car",540,754,-214,Understocked
+c,West,S18_2325,"1932 Model A Ford J-Coupe",9354,912,8442,Overstocked
+c,West,S18_2795,"1928 Mercedes-Benz SSK",548,845,-297,Understocked
+c,West,S18_2949,"1913 Ford Model T Speedster",4189,1028,3161,Overstocked
+c,West,S18_2957,"1934 Ford V8 Coupe",5649,954,4695,Overstocked
+c,West,S18_3136,"18th Century Vintage Horse Carriage",5992,886,5106,Overstocked
+c,West,S18_3140,"1903 Ford Model A",3913,778,3135,Overstocked
+c,West,S18_3320,"1917 Maxwell Touring Car",7913,971,6942,Overstocked
+c,West,S18_3856,"1941 Chevrolet Special Deluxe Cabriolet",2378,957,1421,Well-Stocked
+c,West,S18_4409,"1932 Alfa Romeo 8C2300 Spider Sport",6553,794,5759,Overstocked
+c,West,S18_4522,"1904 Buick Runabout",8290,892,7398,Overstocked
+c,West,S18_4668,"1939 Cadillac Limousine",6645,969,5676,Overstocked
+c,West,S24_1937,"1939 Chevrolet Deluxe Coupe",7332,892,6440,Overstocked
+c,West,S24_2022,"1938 Cadillac V-16 Presidential Limousine",2847,915,1932,Overstocked
+c,West,S24_3151,"1912 Ford Model T Delivery Wagon",9173,881,8292,Overstocked
+c,West,S24_3420,"1937 Horch 930V Limousine",2902,788,2114,Overstocked
+c,West,S24_3816,"1940 Ford Delivery Sedan",6621,771,5850,Overstocked
+c,West,S24_3969,"1936 Mercedes Benz 500k Roadster",2081,809,1272,Well-Stocked
+c,West,S24_4258,"1936 Chrysler Airflow",4710,955,3755,Overstocked
+c,West,S32_4289,"1928 Ford Phaeton Deluxe",136,846,-710,Understocked
+c,West,S50_1341,"1930 Buick Marquette Phaeton",7062,935,6127,Overstocked
+d,South,S12_1666,"1958 Setra Bus",1579,923,656,Well-Stocked
+d,South,S12_4473,"1957 Chevy Pickup",6125,1023,5102,Overstocked
+d,South,S18_1097,"1940 Ford Pickup Truck",2613,945,1668,Well-Stocked
+d,South,S18_2319,"1964 Mercedes Tour Bus",8258,969,7289,Overstocked
+d,South,S18_2432,"1926 Ford Fire Engine",2018,945,1073,Well-Stocked
+d,South,S18_3029,"1999 Yamaha Speed Boat",4259,823,3436,Overstocked
+d,South,S18_3259,"Collectable Wooden Train",6450,799,5651,Overstocked
+d,South,S18_4600,"1940s Ford truck",3128,974,2154,Overstocked
+d,South,S24_2011,"18th century schooner",1898,887,1011,Well-Stocked
+d,South,S24_2300,"1962 Volkswagen Microbus",2327,938,1389,Well-Stocked
+d,South,S32_1268,"1980’s GM Manhattan Express",5099,870,4229,Overstocked
+d,South,S32_2509,"1954 Greyhound Scenicruiser",2874,944,1930,Overstocked
+d,South,S32_3207,"1950's Chicago Surface Lines Streetcar",8601,907,7694,Overstocked
+d,South,S32_3522,"1996 Peterbilt 379 Stake Bed with Outrigger",814,944,-130,Understocked
+d,South,S50_1392,"Diamond T620 Semi-Skirted Tanker",1016,961,55,Understocked
+d,South,S50_1514,"1962 City of Detroit Streetcar",1645,945,700,Well-Stocked
+d,South,S700_1138,"The Schooner Bluenose",1897,818,1079,Well-Stocked
+d,South,S700_1938,"The Mayflower",737,791,-54,Understocked
+d,South,S700_2047,"HMS Bounty",3501,792,2709,Overstocked
+d,South,S700_2610,"The USS Constitution Ship",7083,911,6172,Overstocked
+d,South,S700_3505,"The Titanic",1956,870,1086,Well-Stocked
+d,South,S700_3962,"The Queen Mary",5088,793,4295,Overstocked
+d,South,S72_3212,"Pont Yacht",414,850,-436,Understocked
