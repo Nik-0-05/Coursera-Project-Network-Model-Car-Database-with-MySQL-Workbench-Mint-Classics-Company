@@ -24,8 +24,12 @@ MySQL Workbench was configured and launched on a local machine. It was then conn
 ## Importing the Mint Classics relational Database
 The 'mintclassicsDB.sql' file, containing the script to create and populate the Mint Classics relational database, was downloaded. This script was then imported into MySQL Workbench using the 'Import from Self-Contained File' option within the Data Import tool. This process successfully created the Mint Classics database schema, including tables, fields, primary and foreign keys, and populated it with relevant data. As a result, a fully functional nine-table relational database representing the Mint Classics company was established.
 
-## Understading the Database
+## Data Exploration
 The database structure will be understood by analyzing the Extended Entity-Relationship (EER) diagram. ![ERR](https://github.com/Nik-0-05/Mint-Classics-Model-Car-Database-with-MySQL-Workbench-Project/blob/b4b059fee48acb7871739271153a79d6e5a3e8d8/Extended%20Entity-Relationship%20diagram.png) 
 
 All nine tables were analyzed to understand their schemas, structure and contents of a table using the SQL query 'SELECT * FROM mintclassics.table_name'. This gives insights into their column names, data types, and sample data.
 
+## Data Analysis
+```sql
+SELECT productCode, productName, quantityInStock
+FROM products;
