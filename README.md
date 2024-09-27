@@ -38,7 +38,7 @@ All nine tables were analyzed to understand their schemas, structure and content
 SELECT productCode, productName, quantityInStock
 FROM products;
 ```
-- Warehouse-wise product distribution overview
+- Warehouse-wise product distribution overview [text 1](https://github.com/Nik-0-05/Mint-Classics-Model-Car-Database-with-MySQL-Workbench-Project/blob/47f6e01d289955c0822af50231049494bd15acbf/Project%20Analysis%20Files/SQL%20Queries/List%20All%20Products%20and%20Their%20Current%20Stock.sql)
 ```sql
 SELECT w.warehouseCode, w.warehouseName, COUNT(p.productCode) as product_count,
         SUM(p.quantityInStock) as total_inventory
