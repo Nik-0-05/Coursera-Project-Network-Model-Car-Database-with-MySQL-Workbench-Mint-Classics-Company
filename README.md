@@ -30,12 +30,12 @@ The database structure will be understood by analyzing the Extended Entity-Relat
 All nine tables were analyzed to understand their schemas, structure and contents of a table using the SQL query 'SELECT * FROM mintclassics.table_name'. This gives insights into their column names, data types, and sample data.
 
 ## Data Analysis
-Reviewing the product list and current stock levels
+- Reviewing the product list and current stock levels
 ```sql
 SELECT productCode, productName, quantityInStock
 FROM products;
 ```
-Warehouse-wise product distribution overview
+- Warehouse-wise product distribution overview
 ```sql
 SELECT w.warehouseCode, w.warehouseName, COUNT(p.productCode) as product_count,
         SUM(p.quantityInStock) as total_inventory
