@@ -1,7 +1,7 @@
 # Mint Classics Company Inventory Analysis
 **Optimizing Inventory at Mint Classics: A Data-Driven Approach**
 
-Nikhil Kale  |  LinkedIn: [Profile@nikhil-kale5](https://www.linkedin.com/in/nikhil-kale5)  |  25/09/2024
+Nikhil Kale  |  LinkedIn: [Profile@nikhil-kale5](https://www.linkedin.com/in/nikhil-kale5)  |  24/09/2024
 
 
 ## Introduction
