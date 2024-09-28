@@ -107,7 +107,7 @@ ORDER BY p.quantityInStock DESC;
 
 The 1985 Toyota Supra, located in the East warehouse, has not recorded any sales.
 - Inventory Status by Warehouse [SQL query link](https://github.com/Nik-0-05/Mint-Classics-Model-Car-Database-with-MySQL-Workbench-Project/blob/39b8d6d0574f555bb50cff98dd20784993466b78/Project%20Analysis%20Files/SQL%20Queries/Inventory%20Status%20by%20Warehouse.sql)
-Inventory Status](https://github.com/Nik-0-05/Mint-Classics-Model-Car-Database-with-MySQL-Workbench-Project/blob/39b8d6d0574f555bb50cff98dd20784993466b78/Project%20Analysis%20Files/Analytical%20Snippets/Inventory%20Status%20by%20Warehouse.jpg)
+![Inventory Status](https://github.com/Nik-0-05/Mint-Classics-Model-Car-Database-with-MySQL-Workbench-Project/blob/39b8d6d0574f555bb50cff98dd20784993466b78/Project%20Analysis%20Files/Analytical%20Snippets/Inventory%20Status%20by%20Warehouse.jpg)
 
 The East warehouse has the highest number of overstocked items, while the South warehouse has the lowest.
 
