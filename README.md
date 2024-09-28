@@ -127,7 +127,7 @@ LEFT JOIN orders o ON od.orderNumber = o.orderNumber
 WHERE o.orderDate IS NULL OR o.orderDate < DATE_SUB(NOW(), INTERVAL 6 MONTH)
 ORDER BY p.quantityInStock DESC;
 ```
-A quick pivot table analysis of the output excel data reveals that the East warehouse has the highest quantity of slow-moving inventory, totaling 5,851,766 units, while the South warehouse has the lowest quantity at 2,186,871 units.
+A quick pivot table analysis of the output excel data reveals that the East warehouse has the highest quantity of slow-moving inventory, totaling 5,851,766 units, while the South warehouse has the lowest quantity at 2,186,871 units. The North warehouse holds the second-largest volume of slow-moving inventory, totaling 3,659,553 units.
 
 9. Inventory-Sales Ratio by Warehouses
 ```sql
@@ -155,7 +155,31 @@ The East warehouse generated the highest total sales (35,582) and had the highes
 
 **All above analysis reveals a stark contrast between the East and South warehouses across various metrics. Additional SQL queries and their corresponding output files are available in the 'Analytical files' folder [link](https://github.com/Nik-0-05/Mint-Classics-Model-Car-Database-with-MySQL-Workbench-Project/tree/8b29e8ede5a413393be7991e6b013207b3ff0987/Project%20Analysis%20Files) for further in-depth analysis.** 
 
+## Key Findings and Insights
+- **Warehouse Utilization:** The East warehouse, despite being the most utilized in terms of product storage and sales, exhibits higher levels of inventory inefficiency. It has the highest number of overstocked units, the highest inventory-to-sales ratio, and the highest quantity of slow-moving inventory. In contrast, the South warehouse, while having the lowest utilization and sales, demonstrates more efficient inventory management with lower levels of slow-moving inventory, overstocking, and a lower inventory-to-sales ratio.
+- **Inventory Imbalance:** There is a significant imbalance in inventory levels across warehouses, with many overstocked items, particularly in the East warehouse. The East warehouse exhibits both the highest number of overstocked items and the largest quantity of slow-moving inventory, while the South warehouse has the lowest levels in both categories.
+- **Sales and Inventory Relationship:** While the East warehouse has the highest sales, it also has the highest inventory-sales ratio, indicating potential overstock issues. The South warehouse has the lowest inventory-sales ratio, suggesting more efficient stock management or potential understocking.
+- **Product Line Performance:** Classic Cars and Vintage Cars are the best-performing product lines, while Trains have the lowest sales. The 1985 Toyota Supra, located in the East warehouse, has not recorded any sales.
 
+## Limitations and Further Research
+The report acknowledges that the scope of this analysis is extremely limited. As a result, additional data and data points could have contributed to a more comprehensive and granular analysis. The following data points would have enhanced the report:
+- Warehouse Costs: Information on warehouse operating costs was not available. Including this data could provide a more comprehensive view for decision-making.
+- Warehouse Capacity: Warehouse capacity data was unavailable, limiting insights into warehouse utilization and potential for consolidation.
+- Time Frame: This analysis is based on one year of data. A longer time frame could reveal seasonal trends or long-term patterns.
+- Profit Margins: Incorporating profit margin data for different product lines could refine the recommendations for product line optimization.
+
+## Recommendations
+1. Warehouse Consolidation: Consider closing the South warehouse and redistributing its inventory to the East warehouse. The East warehouse, which holds a product with no sales, also has the highest number of overstocked items and the largest volume of slow-moving inventory. By removing this excess inventory, space can be made available to consolidate both warehouses.
+2. Inventory Rebalancing: Implement a comprehensive inventory rebalancing strategy:
+- Reduce overstock in the East and North warehouses.
+- Redistribute slow-moving items from the South warehouse to others.
+- Ensure popular product lines (Classic Cars, Vintage Cars) are adequately stocked across remaining warehouses.
+
+3. Inventory Management System: Implement a more robust inventory management system to better align stock levels with sales performance, reducing instances of significant over- or under-stocking.
+4. SKU Rationalization: Conduct a detailed analysis of slow-moving items, particularly in the Trucks and Buses, Ships, and Trains categories, to identify candidates for discontinuation or potential promotional campaigns to clear stock. The 1985 Toyota Supra, despite being part of a top-performing Classic Cars product line, has recorded no sales. Further investigation is needed to identify potential issues with this product.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Thank you for your time!
 
 
 
