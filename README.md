@@ -47,6 +47,7 @@ ORDER BY total_inventory DESC;
 ![Total_Inventory](https://github.com/Nik-0-05/Mint-Classics-Model-Car-Database-with-MySQL-Workbench-Project/blob/407d2f4a9a814263517fe283a87e560536e166c5/Project%20Analysis%20Files/Analytical%20Snippets/Warehouse-wise%20product%20distribution%20overview.jpg)
 
 The East warehouse houses the most number of products and has the highest total inventory count, whereas the South warehouse has the lowest product count and lowest total inventory.
+
 3. Product Line Storage for each Warehouse
 ```sql
 SELECT 
@@ -62,6 +63,7 @@ GROUP BY w.warehouseCode, w.warehouseName, p.productLine;
 ![Product Line by Warehouse](https://github.com/Nik-0-05/Mint-Classics-Model-Car-Database-with-MySQL-Workbench-Project/blob/d74b75306941bf509275264b7c467a6df1195fa3/Project%20Analysis%20Files/Analytical%20Snippets/Product%20line%20Storage%20for%20each%20Warehouse.jpg)
 
 While the East and West warehouses each specialize in a single product line, the East warehouse has the highest total inventory. In contrast, the South warehouse, despite offering three product lines, has the lowest total inventory.
+
 4. Total Sales by Warehouses
 ```sql
 SELECT w.warehouseCode, w.warehouseName, SUM(IFNULL(od.quantityOrdered, 0)) AS totalSales
@@ -74,6 +76,7 @@ ORDER BY totalSales ASC;
 ![Warehouse Sales](https://github.com/Nik-0-05/Mint-Classics-Model-Car-Database-with-MySQL-Workbench-Project/blob/8507ae97ab0c195a404492bb42edd6bba3ba6912/Project%20Analysis%20Files/Analytical%20Snippets/Total%20Sales%20by%20Warehouses.jpg)
 
 The East warehouse generated the highest total sales, while the South warehouse recorded the lowest.
+
 5. Number of Sales by Product Lines and Warehouses
 ```sql
 SELECT 
@@ -93,6 +96,7 @@ ORDER BY
 ![Product line Sales](https://github.com/Nik-0-05/Mint-Classics-Model-Car-Database-with-MySQL-Workbench-Project/blob/8507ae97ab0c195a404492bb42edd6bba3ba6912/Project%20Analysis%20Files/Analytical%20Snippets/Number%20of%20Sales%20by%20Product%20Lines.jpg)
 
  Classic Cars are the best-selling product line, followed by Vintage Cars and Motorcycles. Trucks, Buses, Ships, and Trains, which are stored in the South warehouse, have lower sales volumes.
+
 6. Products with No Sales
 ```sql
 SELECT p.productCode, p.productName, p.quantityInStock, w.warehouseName
@@ -106,11 +110,13 @@ ORDER BY p.quantityInStock DESC;
 ![No Sales](https://github.com/Nik-0-05/Mint-Classics-Model-Car-Database-with-MySQL-Workbench-Project/blob/39b8d6d0574f555bb50cff98dd20784993466b78/Project%20Analysis%20Files/Analytical%20Snippets/Products%20with%20No%20Sales.jpg)
 
 The 1985 Toyota Supra, located in the East warehouse, has not recorded any sales.
+
 7. Inventory Status by Warehouse [SQL query link](https://github.com/Nik-0-05/Mint-Classics-Model-Car-Database-with-MySQL-Workbench-Project/blob/39b8d6d0574f555bb50cff98dd20784993466b78/Project%20Analysis%20Files/SQL%20Queries/Inventory%20Status%20by%20Warehouse.sql)
 
 ![Inventory Status](https://github.com/Nik-0-05/Mint-Classics-Model-Car-Database-with-MySQL-Workbench-Project/blob/39b8d6d0574f555bb50cff98dd20784993466b78/Project%20Analysis%20Files/Analytical%20Snippets/Inventory%20Status%20by%20Warehouse.jpg)
 
 The East warehouse has the highest number of overstocked items, while the South warehouse has the lowest.
+
 8. Slow-Moving Inventory : [Output Excel link](https://github.com/Nik-0-05/Mint-Classics-Model-Car-Database-with-MySQL-Workbench-Project/blob/39b8d6d0574f555bb50cff98dd20784993466b78/Project%20Analysis%20Files/Output%20CSV%20Files/Slow-moving%20Products.csv)
 ```sql
 SELECT p.productCode, p.productName, p.quantityInStock, w.warehouseName
@@ -122,6 +128,7 @@ WHERE o.orderDate IS NULL OR o.orderDate < DATE_SUB(NOW(), INTERVAL 6 MONTH)
 ORDER BY p.quantityInStock DESC;
 ```
 A quick pivot table analysis of the output excel data reveals that the East warehouse has the highest quantity of slow-moving inventory, totaling 5,851,766 units, while the South warehouse has the lowest quantity at 2,186,871 units.
+
 9. Inventory-Sales Ratio by Warehouses
 ```sql
 SELECT 
