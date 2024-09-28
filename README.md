@@ -62,5 +62,38 @@ GROUP BY w.warehouseCode, w.warehouseName, p.productLine;
 ![Product Line by Warehouse](https://github.com/Nik-0-05/Mint-Classics-Model-Car-Database-with-MySQL-Workbench-Project/blob/d74b75306941bf509275264b7c467a6df1195fa3/Project%20Analysis%20Files/Analytical%20Snippets/Product%20line%20Storage%20for%20each%20Warehouse.jpg)
 
 While the East and West warehouses each specialize in a single product line, the East warehouse has the highest total inventory. In contrast, the South warehouse, despite offering three product lines, has the lowest total inventory.
+- Total Sales by Warehouses
+```sql
+SELECT w.warehouseCode, w.warehouseName, SUM(IFNULL(od.quantityOrdered, 0)) AS totalSales
+FROM warehouses w
+LEFT JOIN products p ON w.warehouseCode = p.warehouseCode
+LEFT JOIN orderdetails od ON p.productCode = od.productCode
+GROUP BY w.warehouseCode, w.warehouseName
+ORDER BY totalSales ASC;
+```
+![Warehouse Sales](https://github.com/Nik-0-05/Mint-Classics-Model-Car-Database-with-MySQL-Workbench-Project/blob/8507ae97ab0c195a404492bb42edd6bba3ba6912/Project%20Analysis%20Files/Analytical%20Snippets/Total%20Sales%20by%20Warehouses.jpg)
+
+The East warehouse generated the highest total sales, while the South warehouse recorded the lowest.
+- Number of Sales by Product Lines and Warehouses
+```sql
+SELECT 
+    pl.productLine,
+    SUM(od.quantityOrdered) AS total_quantity_sold
+FROM 
+    productlines pl
+JOIN 
+    products p ON pl.productLine = p.productLine
+JOIN 
+    orderdetails od ON p.productCode = od.productCode
+GROUP BY 
+    pl.productLine
+ORDER BY 
+    total_quantity_sold DESC;
+```
+![Product line Sales](https://github.com/Nik-0-05/Mint-Classics-Model-Car-Database-with-MySQL-Workbench-Project/blob/8507ae97ab0c195a404492bb42edd6bba3ba6912/Project%20Analysis%20Files/Analytical%20Snippets/Number%20of%20Sales%20by%20Product%20Lines.jpg)
+
+ Classic Cars are the best-selling product line, followed by Vintage Cars and Motorcycles. Trucks, Buses, Ships, and Trains, which are stored in the South warehouse, have lower sales volumes.
+- 
+
 
 
