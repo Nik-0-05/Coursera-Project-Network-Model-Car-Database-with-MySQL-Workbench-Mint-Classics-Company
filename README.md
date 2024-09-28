@@ -122,6 +122,34 @@ WHERE o.orderDate IS NULL OR o.orderDate < DATE_SUB(NOW(), INTERVAL 6 MONTH)
 ORDER BY p.quantityInStock DESC;
 ```
 A pivot table analysis of the output excel data reveals that the East warehouse has the highest quantity of slow-moving inventory, totaling 5,851,766 units, while the South warehouse has the lowest quantity at 2,186,871 units.
+- Inventory-Sales Ratio by Warehouses
+```sql
+SELECT 
+    w.warehouseCode,
+    w.warehouseName,
+    COUNT(DISTINCT p.productCode) AS unique_products,
+    SUM(p.quantityInStock) AS total_inventory,
+    SUM(od.quantityOrdered) AS total_sales,
+    SUM(p.quantityInStock) / NULLIF(SUM(od.quantityOrdered), 0) AS inventory_sales_ratio
+FROM 
+    warehouses w
+LEFT JOIN 
+    products p ON w.warehouseCode = p.warehouseCode
+LEFT JOIN 
+    orderdetails od ON p.productCode = od.productCode
+GROUP BY 
+    w.warehouseCode, w.warehouseName
+ORDER BY 
+    total_inventory DESC;
+```
+![Inventory-Sales Ratio](https://github.com/Nik-0-05/Mint-Classics-Model-Car-Database-with-MySQL-Workbench-Project/blob/8852a2e3529357d4540d0eb8a1429d0e61405a7b/Project%20Analysis%20Files/Analytical%20Snippets/Inventory-Sales%20Ratio%20by%20Warehouses.jpg)
+
+The East warehouse generated the highest total sales (35,582) and had the highest inventory-to-sales ratio (164.4586), while the South warehouse had the lowest sales (22,351) and the lowest inventory-to-sales ratio (97.8422). 
+
+**The analysis reveals a stark contrast between the East and South warehouses across various metrics. Additional SQL queries and their corresponding output files are available in the 'Analytical files' folder for further in-depth analysis.** 
+
+
+
 
 
 
