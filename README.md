@@ -45,6 +45,20 @@ GROUP BY w.warehouseCode, w.warehouseName
 ORDER BY total_inventory DESC;
 ```
 ![Total_Inventory](https://github.com/Nik-0-05/Mint-Classics-Model-Car-Database-with-MySQL-Workbench-Project/blob/407d2f4a9a814263517fe283a87e560536e166c5/Project%20Analysis%20Files/Analytical%20Snippets/Warehouse-wise%20product%20distribution%20overview.jpg)
-
+The East warehouse houses the most number of products and has the highest total inventory count, whereas the South warehouse has the lowest product count and lowest total inventory.
+- Product Line Storage for each Warehouse
+```sql
+SELECT 
+ p.warehouseCode,
+ w.warehouseName,
+    p.productLine,
+ COUNT(productCode) AS total_product, 
+ SUM(p.quantityInStock) AS total_stock
+FROM products AS p 
+JOIN warehouses AS w ON p.warehouseCode = w.warehouseCode
+GROUP BY w.warehouseCode, w.warehouseName, p.productLine;
+```
+![Product Line by Warehouse](https://github.com/Nik-0-05/Mint-Classics-Model-Car-Database-with-MySQL-Workbench-Project/blob/d74b75306941bf509275264b7c467a6df1195fa3/Project%20Analysis%20Files/Analytical%20Snippets/Product%20line%20Storage%20for%20each%20Warehouse.jpg)
+While the East and West warehouses each specialize in a single product line, the East warehouse has the highest total inventory. In contrast, the South warehouse, despite offering three product lines, has the lowest total inventory.
 
 
