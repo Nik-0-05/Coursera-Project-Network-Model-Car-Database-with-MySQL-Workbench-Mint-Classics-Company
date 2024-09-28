@@ -35,6 +35,7 @@ All nine tables were analyzed to understand their schemas, structure and content
 SELECT productCode, productName, quantityInStock
 FROM products;
 ```
+Examining products and their inventory levels
 - Warehouse-wise product distribution overview 
 ```sql
 SELECT w.warehouseCode, w.warehouseName, COUNT(p.productCode) as product_count,
