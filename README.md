@@ -30,7 +30,7 @@ The database structure will be understood by analyzing the Extended Entity-Relat
 All nine tables were analyzed to understand their schemas, structure and contents of a table using the SQL query 'SELECT * FROM mintclassics.table_name'. This gives insights into their column names, data types, and sample data.
 
 ## Data Analysis
-- Conducting a preliminary analysis of products and inventory levels [Link](https://github.com/Nik-0-05/Mint-Classics-Model-Car-Database-with-MySQL-Workbench-Project/blob/47f6e01d289955c0822af50231049494bd15acbf/Project%20Analysis%20Files/SQL%20Queries/List%20All%20Products%20and%20Their%20Current%20Stock.sql)
+- Conducting a preliminary analysis of products and inventory levels
 ```sql
 SELECT productCode, productName, quantityInStock
 FROM products;
@@ -93,7 +93,26 @@ ORDER BY
 ![Product line Sales](https://github.com/Nik-0-05/Mint-Classics-Model-Car-Database-with-MySQL-Workbench-Project/blob/8507ae97ab0c195a404492bb42edd6bba3ba6912/Project%20Analysis%20Files/Analytical%20Snippets/Number%20of%20Sales%20by%20Product%20Lines.jpg)
 
  Classic Cars are the best-selling product line, followed by Vintage Cars and Motorcycles. Trucks, Buses, Ships, and Trains, which are stored in the South warehouse, have lower sales volumes.
-- 
+- Products with No Sales
+```sql
+SELECT p.productCode, p.productName, p.quantityInStock, w.warehouseName
+FROM products p
+LEFT JOIN warehouses w ON p.warehouseCode = w.warehouseCode
+LEFT JOIN orderdetails od ON p.productCode = od.productCode
+GROUP BY p.productCode, p.productName, p.quantityInStock, w.warehouseName
+HAVING SUM(od.quantityOrdered) IS NULL OR SUM(od.quantityOrdered) = 0
+ORDER BY p.quantityInStock DESC;
+```
+![No Sales](https://github.com/Nik-0-05/Mint-Classics-Model-Car-Database-with-MySQL-Workbench-Project/blob/39b8d6d0574f555bb50cff98dd20784993466b78/Project%20Analysis%20Files/Analytical%20Snippets/Products%20with%20No%20Sales.jpg)
+
+The 1985 Toyota Supra, located in the East warehouse, has not recorded any sales.
+- Inventory Status by Warehouse [SQL query link](https://github.com/Nik-0-05/Mint-Classics-Model-Car-Database-with-MySQL-Workbench-Project/blob/39b8d6d0574f555bb50cff98dd20784993466b78/Project%20Analysis%20Files/SQL%20Queries/Inventory%20Status%20by%20Warehouse.sql)
+Inventory Status](https://github.com/Nik-0-05/Mint-Classics-Model-Car-Database-with-MySQL-Workbench-Project/blob/39b8d6d0574f555bb50cff98dd20784993466b78/Project%20Analysis%20Files/Analytical%20Snippets/Inventory%20Status%20by%20Warehouse.jpg)
+
+The East warehouse has the highest number of overstocked items, while the South warehouse has the lowest.
+
+
+
 
 
 
