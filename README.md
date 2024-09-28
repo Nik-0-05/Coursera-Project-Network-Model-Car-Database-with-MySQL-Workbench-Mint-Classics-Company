@@ -30,12 +30,11 @@ The database structure will be understood by analyzing the Extended Entity-Relat
 All nine tables were analyzed to understand their schemas, structure and contents of a table using the SQL query 'SELECT * FROM mintclassics.table_name'. This gives insights into their column names, data types, and sample data.
 
 ## Data Analysis
-- Reviewing the product list and current stock levels [Link](https://github.com/Nik-0-05/Mint-Classics-Model-Car-Database-with-MySQL-Workbench-Project/blob/47f6e01d289955c0822af50231049494bd15acbf/Project%20Analysis%20Files/SQL%20Queries/List%20All%20Products%20and%20Their%20Current%20Stock.sql)
+- Conducting a preliminary analysis of products and inventory levels [Link](https://github.com/Nik-0-05/Mint-Classics-Model-Car-Database-with-MySQL-Workbench-Project/blob/47f6e01d289955c0822af50231049494bd15acbf/Project%20Analysis%20Files/SQL%20Queries/List%20All%20Products%20and%20Their%20Current%20Stock.sql)
 ```sql
 SELECT productCode, productName, quantityInStock
 FROM products;
 ```
-Examining products and their inventory levels
 - Warehouse-wise product distribution overview 
 ```sql
 SELECT w.warehouseCode, w.warehouseName, COUNT(p.productCode) as product_count,
@@ -45,5 +44,7 @@ LEFT JOIN products p ON w.warehouseCode = p.warehouseCode
 GROUP BY w.warehouseCode, w.warehouseName
 ORDER BY total_inventory DESC;
 ```
+![Total_Inventory](https://github.com/Nik-0-05/Mint-Classics-Model-Car-Database-with-MySQL-Workbench-Project/blob/407d2f4a9a814263517fe283a87e560536e166c5/Project%20Analysis%20Files/Analytical%20Snippets/Warehouse-wise%20product%20distribution%20overview.jpg)
+
 
 
