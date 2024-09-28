@@ -169,14 +169,13 @@ The report acknowledges that the scope of this analysis is extremely limited. As
 - Profit Margins: Incorporating profit margin data for different product lines could refine the recommendations for product line optimization.
 
 ## Recommendations
-1. Warehouse Consolidation: Consider closing the South warehouse and redistributing its inventory to the East warehouse. The East warehouse, which holds a product with no sales, also has the highest number of overstocked items and the largest volume of slow-moving inventory. By removing this excess inventory, space can be made available to consolidate both warehouses.
-2. Inventory Rebalancing: Implement a comprehensive inventory rebalancing strategy:
-- Reduce overstock in the East and North warehouses.
-- Redistribute slow-moving items from the South warehouse to others.
-- Ensure popular product lines (Classic Cars, Vintage Cars) are adequately stocked across remaining warehouses.
-
-3. Inventory Management System: Implement a more robust inventory management system to better align stock levels with sales performance, reducing instances of significant over- or under-stocking.
-4. SKU Rationalization: Conduct a detailed analysis of slow-moving items, particularly in the Trucks and Buses, Ships, and Trains categories, to identify candidates for discontinuation or potential promotional campaigns to clear stock. The 1985 Toyota Supra, despite being part of a top-performing Classic Cars product line, has recorded no sales. Further investigation is needed to identify potential issues with this product.
+1. **Warehouse Consolidation:** Consider closing the South warehouse and redistributing its inventory to the East warehouse. The East warehouse, which holds a product with no sales, also has the highest number of overstocked items and the largest volume of slow-moving inventory. By removing this excess inventory, space can be made available to consolidate both warehouses.
+2. **Inventory Rebalancing:** Implement a comprehensive inventory rebalancing strategy:
+• Reduce overstock in the East and North warehouses.
+• Redistribute slow-moving items from the South warehouse to others.
+• Ensure popular product lines (Classic Cars, Vintage Cars) are adequately stocked across remaining warehouses.
+3. **Inventory Management System:** Implement a more robust inventory management system to better align stock levels with sales performance, reducing instances of significant over- or under-stocking.
+4. **SKU Rationalization:** Conduct a detailed analysis of slow-moving items, particularly in the Trucks and Buses, Ships, and Trains categories, to identify candidates for discontinuation or potential promotional campaigns to clear stock. The 1985 Toyota Supra, despite being part of a top-performing Classic Cars product line, has recorded no sales. Further investigation is needed to identify potential issues with this product.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Thank you for your time!
