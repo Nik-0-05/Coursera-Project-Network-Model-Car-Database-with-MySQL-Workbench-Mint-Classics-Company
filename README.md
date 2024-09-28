@@ -111,6 +111,18 @@ The 1985 Toyota Supra, located in the East warehouse, has not recorded any sales
 ![Inventory Status](https://github.com/Nik-0-05/Mint-Classics-Model-Car-Database-with-MySQL-Workbench-Project/blob/39b8d6d0574f555bb50cff98dd20784993466b78/Project%20Analysis%20Files/Analytical%20Snippets/Inventory%20Status%20by%20Warehouse.jpg)
 
 The East warehouse has the highest number of overstocked items, while the South warehouse has the lowest.
+- Slow-Moving Inventory : [Output Excel link](https://github.com/Nik-0-05/Mint-Classics-Model-Car-Database-with-MySQL-Workbench-Project/blob/39b8d6d0574f555bb50cff98dd20784993466b78/Project%20Analysis%20Files/Output%20CSV%20Files/Slow-moving%20Products.csv)
+```sql
+SELECT p.productCode, p.productName, p.quantityInStock, w.warehouseName
+FROM products p
+LEFT JOIN warehouses w ON p.warehouseCode = w.warehouseCode
+LEFT JOIN orderdetails od ON p.productCode = od.productCode
+LEFT JOIN orders o ON od.orderNumber = o.orderNumber
+WHERE o.orderDate IS NULL OR o.orderDate < DATE_SUB(NOW(), INTERVAL 6 MONTH)
+ORDER BY p.quantityInStock DESC;
+```
+A pivot table analysis of the output excel data reveals that the East warehouse has the highest quantity of slow-moving inventory, totaling 5,851,766 units, while the South warehouse has the lowest quantity at 2,186,871 units.
+
 
 
 
